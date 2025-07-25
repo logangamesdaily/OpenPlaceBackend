@@ -215,4 +215,8 @@ router.get("/v3/survey/", (req, res) => {
     })
 })
 
+router.get("/ping/", (req, res) => {
+    res.send("Pong")
+})
+
 module.exports = router;
