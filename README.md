@@ -2,7 +2,8 @@
 The open source and freely available version of the Place site backend at https://beta.place.uk.to
 
 # THIS IS NOT THE SAME SERVER USED ON THE SITE
-It is simply a Place2-compatible server, and does not have email verification, or RISE account integration, instead it has it's own accounting system independent of anything else.
+It is simply a Place2-compatible server, and does not have email verification, or RISE account integration, instead it has it's own accounting system independent of anything else.  
+In the future, when RISE OAuth is working, this server will be updated to optionally use it.
 
 # How to use?
 Firstly, you need a copy of a MySQL-compatible database server software installed and ready to go.  
