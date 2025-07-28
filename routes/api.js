@@ -7,16 +7,7 @@ const bcrypt = require("bcrypt")
 const crypto =  require('crypto')
 const randomBytes = crypto.randomBytes
 
-function generateToken(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-}
-
+const generateToken = () => crypto.randomUUID();
 const saltRounds = 10
 
 const envData = env.config()?.parsed;
@@ -84,7 +75,7 @@ router.get("/v2/login.sjs", (req, res) => {
                         res.send("Something went very wrong. Please open an issue on the Place Open Source Project at https://github.com/An-Unnamed-Developer/Place2/ and specify Server, and paste the below logs. <br> " + err)
                     } else {
                         if (result) {
-                            const token = generateToken(32)
+                            const token = generateToken()
                             let expDate = new Date()
                             expDate.setTime(parseInt((new Date().getTime() + 604800000)))
                             
