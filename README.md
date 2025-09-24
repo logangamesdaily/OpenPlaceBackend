@@ -14,4 +14,4 @@ There, the server is set up and ready to go!
 
 # How to access the server?
 If your instance is public, you can use the normal client at [https://beta.place.uk.to](https://beta.place.uk.to/) (not place.uk.to, as Place v1 doesn't support server switching).  
-However, if your instance is private or you want full control over the domain/access URL or just want it to be more convenient than switching over to your server every time, you can download the built place client and extract it to the html folder (with the readme in.) You can download the built client [here](https://beta.place.uk.to/builtclient.zip)
+However, if your instance is private or you want full control over the domain/access URL or just want it to be more convenient than switching over to your server every time, you can download the built place client and extract it to the html folder (with the readme in.) You can download the built client [here](https://beta.place.uk.to/placeclient.zip)
